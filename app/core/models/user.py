@@ -14,7 +14,6 @@ class User(AbstractBaseUser, PermissionsMixin):
 
     is_staff = models.BooleanField(default=True)
     is_active = models.BooleanField(default=True)
-    is_merchant = models.BooleanField(default=False)
 
     objects = UserManager()
 
